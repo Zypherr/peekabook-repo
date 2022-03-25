@@ -27,4 +27,10 @@
 
     Echo "<p>Book Name = {$BookName}</p>";
 
+    $FetchBookDescription = "SELECT Description FROM tb_books WHERE BookID = '{$BookID}' ;";
+    $FetchBookDescriptionResult = mysqli_query($conn, $FetchBookDescription);
+    $BookDescription = $FetchBookDescriptionResult->fetch_array()[0] ?? '';
+
+    Echo "<h3>Story Plot</h3><p>{$BookDescription}</p>";
+
 ?>

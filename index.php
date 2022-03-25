@@ -64,13 +64,7 @@
                 <li style="margin-bottom: 2%;">
                   <?php include_once "scripts/php/dropdownPopulate.php"; ?>
                 </li>
-                <li>
-                  <input placeholder="Author (Not Required)" type="text" id="fname" name="fname" style="width: 80%; margin-bottom: 2%;">
-                </li>
-                  
-                <li>
-                    <input placeholder="Related words (Not Required)" type="text" id="fname" name="fname" style="width: 80%;">
-                </li>
+              
               </ul>
               <input type="submit" name="submit" class="btn btn-main"/>
               </form>            
