@@ -59,47 +59,24 @@
             <div class="banner-content">
               <span class="subheading">Explore the unexplored!</span>
               <h1>Let us unlock your next chapter.</h1>
+              <form action="scripts/php/fetchBook.php" method="Post">
               <ul>
-                <li>
-                  <select name="Year" id="Year" style="width: 80%;">
-                    <option value="">Select a Publishing Year</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2021</option>
-                    <option value="2020">2020</option>
-                    <option value="2019">2019</option>
-                    <option value="2018">2018</option>
-                    <option value="2017">2017</option>
-                    <option value="2016">2016</option>
-                    <option value="2015">2015</option>
-                    <option value="2014">2014</option>
-                    <option value="2013">2013</option>
-                    <option value="2012">2012</option>
-                  </select>
+                <li style="margin-bottom: 2%;">
+                  <?php include_once "scripts/php/dropdownPopulate.php"; ?>
                 </li>
                 <li>
-                    <select name="Genre" id="Genre" style="width: 80%;">
-                      <option value="">Select a Genre</option>
-                      <option value="Romance">Romance</option>
-                      <option value="Thriller">Thriller</option>
-                      <option value="Horror">Horror</option>
-                      <option value="Fantasy">Fantasy</option>
-                      <option value="Adventure">Adventure</option>
-                      <option value="Biography">Biography</option>
-                      <option value="Crime">Crime</option>
-                      <option value="History">History</option>
-                    </select>
-                  </li>
-                  <li>
-                    <input placeholder="Author (Not Required)" type="text" id="fname" name="fname" style="width: 80%; margin-bottom: 2%;">
-                  </li>
+                  <input placeholder="Author (Not Required)" type="text" id="fname" name="fname" style="width: 80%; margin-bottom: 2%;">
+                </li>
                   
-                  <li>
+                <li>
                     <input placeholder="Related words (Not Required)" type="text" id="fname" name="fname" style="width: 80%;">
-                  </li>
+                </li>
               </ul>
-              <a href="#" class="btn btn-main">Find me a book</a>
+              <input type="submit" name="submit" class="btn btn-main"/>
+              </form>            
             </div>
           </div>
+          
           <div class="col-lg-5">
             <div class="banner-img">
               <img
